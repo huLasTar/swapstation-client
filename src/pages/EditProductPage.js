@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/auth.context";
 import axios from "axios";
+import service from "../api/service";
 
 const API_URL = "http://localhost:5005";
 
@@ -10,6 +11,7 @@ function EditProductPage(props) {
   const { user } = useContext(AuthContext);
 
   const [title, setTitle] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
   const [category, setCategory] = useState("");
   const [condition, setCondition] = useState("");
   const [description, setDescription] = useState("");
@@ -30,6 +32,7 @@ function EditProductPage(props) {
       .then((response) => {
         const oneProduct = response.data;
         setTitle(oneProduct.title);
+        setImageUrl(oneProduct.setImageUrl);
         setCategory(oneProduct.category);
         setCondition(oneProduct.condition);
         setDescription(oneProduct.description);
@@ -41,10 +44,22 @@ function EditProductPage(props) {
       .catch((error) => console.log(error));
   }, [id]);
 
+  const handleFileUpload = (e) => {
+    const uploadData = new FormData();
+
+    uploadData.append("imageUrl", e.target.files[0]);
+
+    service
+      .uploadImage(uploadData)
+      .then((response) => setImageUrl(response.fileUrl))
+      .catch((err) => console.log("Error while uploading the file: ", err));
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const requestBody = {
       title,
+      imageUrl,
       category,
       condition,
       description,
@@ -196,6 +211,22 @@ function EditProductPage(props) {
                           value={price}
                           onChange={(e) => setPrice(e.target.value)}
                         />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="row mb-3">
+                    <div className="col-12">
+                      <div className="form-group">
+                        <label htmlFor="imageUrl" className="form-label">
+                          Image
+                        </label>
+                        <input
+                          type="file"
+                          onChange={(e) => handleFileUpload(e)}
+                          className="form-control"
+                        />
+                        <small>Current image: {imageUrl}</small>
                       </div>
                     </div>
                   </div>

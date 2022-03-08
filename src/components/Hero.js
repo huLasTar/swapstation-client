@@ -19,10 +19,11 @@ function Hero() {
               loading="lazy"
             />
           </div>
-          <div className="col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3">
-              Pay once, <span className="text-success">play twice!</span>
-            </h1>
+          <div className="col-lg-6 text-end">
+            <h2 className="display-5 fw-bold lh-1 mb-3">
+              Swap free,{" "}
+              <span className="text-success">just pay shipping!</span>
+            </h2>
             <p className="lead">
               Browse our collection and get a fair exchange!
             </p>

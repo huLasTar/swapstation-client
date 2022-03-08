@@ -4,8 +4,12 @@ function Contact() {
       <div className="container col-xxl-8 px-4 py-5">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div className="col-12">
-            <h1 className="display-5 fw-bold lh-1 mb-3">Contact</h1>
-            <p className="lead">If you have any questions, reach out to us!</p>
+            <h2 className="display-5 fw-bold lh-1 mb-3">
+              Connect <span className="text-success">With Us</span>
+            </h2>
+            <p className="lead">
+              If you have any questions, don't hesitate to send a message!
+            </p>
             <form id="contactForm">
               <div className="mb-3">
                 <label className="form-label" htmlFor="name">
@@ -44,8 +48,11 @@ function Contact() {
               </div>
 
               <div className="d-grid gap-2 col-4 mx-auto">
-                <button className="btn btn-success btn-lg mt-5" type="submit">
-                  Submit
+                <button
+                  className="btn btn-success text-primary fw-bold btn-lg mt-5"
+                  type="submit"
+                >
+                  Send
                 </button>
               </div>
             </form>

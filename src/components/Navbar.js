@@ -8,8 +8,8 @@ function Navbar() {
   return (
     <nav className="navbar navbar-dark bg-dark border-0 m-0">
       <div className="container">
-        <Link to="/" className="navbar-brand">
-          SwapStation
+        <Link to="/">
+          <h1 className="navbar-brand m-0">SwapStation</h1>
         </Link>
 
         <Link to="#about">About</Link>
@@ -36,7 +36,7 @@ function Navbar() {
 
         {!isLoggedIn && (
           <>
-            <Link to="/signup" className="btn btn-success">
+            <Link to="/signup" className="btn btn-outline-success">
               Sign Up
             </Link>
             <Link to="/login" className="btn btn-outline-success">

@@ -1,12 +1,12 @@
 function Faq() {
   return (
-    <section id="faq" className="bg-white">
+    <section id="faq" className="bg-light">
       <div className="container col-xxl-8 px-4 py-5">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div className="col-12">
-            <h1 className="display-5 fw-bold lh-1 mb-5">
-              Frequently Asked Questions
-            </h1>
+            <h2 className="display-5 fw-bold lh-1 mb-5">
+              Frequently Asked <span className="text-success">Questions</span>
+            </h2>
             <h3 className="fw-normal m-0">How do I use SwapStation?</h3>
             <p className="lead">
               Add games you are willing to swap or sell to Products.
@@ -29,7 +29,6 @@ function Faq() {
               Send us an email to let us know and we will look into it to make
               things right.
             </p>
-            <hr />
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { AuthContext } from "../context/auth.context";
 import axios from "axios";
+import service from "../api/service";
 
 const API_URL = "http://localhost:5005";
 
@@ -9,6 +10,7 @@ function AddProduct(props) {
   const { user } = useContext(AuthContext);
 
   const [title, setTitle] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
   const [category, setCategory] = useState("");
   const [condition, setCondition] = useState("");
   const [description, setDescription] = useState("");
@@ -17,10 +19,22 @@ function AddProduct(props) {
   const [reported, setReported] = useState("");
   const [seller, setSeller] = useState("");
 
+  const handleFileUpload = (e) => {
+    const uploadData = new FormData();
+
+    uploadData.append("imageUrl", e.target.files[0]);
+
+    service
+      .uploadImage(uploadData)
+      .then((response) => setImageUrl(response.fileUrl))
+      .catch((err) => console.log("Error while uploading the file: ", err));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const requestBody = {
       title,
+      imageUrl,
       category,
       condition,
       description,
@@ -41,6 +55,7 @@ function AddProduct(props) {
       .then((response) => {
         // Reset the state
         setTitle("");
+        setImageUrl("");
         setCategory("");
         setCondition("");
         setDescription("");
@@ -177,7 +192,11 @@ function AddProduct(props) {
                     value={seller}
                     onChange={(e) => setSeller(e.target.value)}
                     className="form-control"
-                    readOnly
+                  />
+                  <input
+                    type="file"
+                    onChange={(e) => handleFileUpload(e)}
+                    className="form-control"
                   />
                   <div className="row">
                     <div className="col-12">

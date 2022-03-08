@@ -27,15 +27,32 @@ function ProductListPage() {
   }, []);
 
   return (
-    <div className="album py-5 ProductListPage">
-      <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          {products.map((product) => (
-            <ProductCard key={product._id} {...product} />
-          ))}
+    <section id="products">
+      <div className="container col-xxl-8 px-4 py-5">
+        <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <h2 className="display-5 fw-bold lh-1 mb-3">
+            Browse <span className="text-success">Products</span>
+          </h2>
+          <div className="album py-5 ProductListPage">
+            <div className="container">
+              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                {products.map((product) => (
+                  <ProductCard key={product._id} {...product} />
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="d-grid gap-2 col-4 mx-auto">
+            <button
+              className="btn btn-success text-primary fw-bold btn-lg mt-5"
+              type="submit"
+            >
+              Show More Products
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

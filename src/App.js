@@ -23,8 +23,6 @@ function App() {
 
         <Route path="/products" element={<ProductListPage />} />
 
-        <Route path="/products/:id" element={<ProductDetailsPage />} />
-
         <Route
           path="/products/create"
           element={
@@ -33,6 +31,8 @@ function App() {
             </IsPrivate>
           }
         />
+
+        <Route path="/products/:id" element={<ProductDetailsPage />} />
 
         <Route
           path="/products/edit/:id"

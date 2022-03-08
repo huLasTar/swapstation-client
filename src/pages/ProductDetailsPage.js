@@ -35,10 +35,16 @@ function ProductDetailsPage(props) {
             <div className="row">
               <div className="col-6 p-0">
                 <div className="p-0">
-                  <h4>Image here</h4>
+                  {product && (
+                    <img
+                      className="img-fluid rounded-start"
+                      src={product.imageUrl}
+                      alt={product.title}
+                    />
+                  )}
                 </div>
               </div>
-              <div className="col-6 p-5 text-start">
+              <div className="col-6 p-0 text-start">
                 <div className="p-5">
                   {product && (
                     <>
@@ -51,7 +57,7 @@ function ProductDetailsPage(props) {
                         Condition: {product.condition}
                       </h5>
                       <h5 className="fw-normal mb-3">
-                        Uploaded by: {product.username}
+                        Uploaded by: {product.seller.username}
                       </h5>
                       <h5 className="fw-normal mb-3">
                         Purchasable: {product.purchasable ? "Yes" : "No"}
@@ -68,32 +74,33 @@ function ProductDetailsPage(props) {
                   )}
                   <Link
                     to={`/exchange/${id}`}
-                    className="btn btn-success btn-lg d-block mt-5"
+                    className="btn btn-success btn-lg text-primary fw-bold d-block mt-5"
                   >
                     Make an offer
                   </Link>
                   <Link
                     to={`/report/${id}`}
-                    className="btn btn-danger btn-lg text-white d-block mt-5"
+                    className="btn btn-danger btn-lg text-white fw-bold d-block mt-5"
                   >
                     Report Product
                   </Link>
                   <Link
                     to={`/products/edit/${id}`}
-                    className="btn btn-warning d-block btn-lg mt-5"
+                    className="btn btn-warning btn-lg text-dark fw-bold d-block mt-5"
                   >
                     Edit Product
                   </Link>
                 </div>
               </div>
             </div>
+            <Link
+              to="/products"
+              className="btn btn-success btn-lg text-primary fw-bold my-5"
+            >
+              Back to products
+            </Link>
           </div>
         </div>
-      </div>
-      <div className="row">
-        <Link to="/products" className="btn btn-success btn-lg mt-5">
-          Back to products
-        </Link>
       </div>
     </div>
   );
