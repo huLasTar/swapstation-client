@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import { AuthContext } from "../context/auth.context";
 import axios from "axios";
+import SwapOffer from "../components/SwapOffer";
 
 const API_URL = "https://swapstation.herokuapp.com";
 
@@ -74,18 +75,17 @@ function ProductDetailsPage(props) {
                       <p className="lead">{product.description}</p>
                     </>
                   )}
-                  <Link
-                    to={`/exchange/${id}`}
-                    className="btn btn-success btn-lg text-primary fw-bold d-block mt-5"
-                  >
-                    Make an offer
-                  </Link>
-                  <Link
-                    to={`/reports/${id}`}
-                    className="btn btn-danger btn-lg text-white fw-bold d-block mt-5"
-                  >
-                    Report Product
-                  </Link>
+
+                  <SwapOffer />
+
+                  {product && product.seller._id !== user._id && (
+                    <Link
+                      to={`/reports/${id}`}
+                      className="btn btn-danger btn-lg text-white fw-bold d-block mt-5"
+                    >
+                      Report Product
+                    </Link>
+                  )}
                   {product && product.seller._id === user._id && (
                     <Link
                       to={`/products/edit/${id}`}
