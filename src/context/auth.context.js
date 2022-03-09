@@ -56,7 +56,7 @@ function AuthProviderWrapper(props) {
   };
 
   const logOutUser = () => {
-    navigate("/");
+    //navigate("/");
     // To log out the user, remove the token
     removeToken();
     // and update the state variables
