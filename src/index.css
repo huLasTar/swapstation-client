@@ -29,9 +29,12 @@ a.nav-link {
   text-decoration: none;
 }
 
-a.nav-link:hover,
-a.nav-link:focus,
-a.nav-link:active {
+nav a.nav-link:hover,
+nav a.nav-link:focus,
+nav a.nav-link:active,
+footer a.nav-link:hover,
+footer a.nav-link:focus,
+footer a.nav-link:active {
   color: #5af275;
   text-shadow: 0 0 10px #5af275, 0 0 10px #57de39;
 }

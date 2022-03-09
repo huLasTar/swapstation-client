@@ -41,14 +41,6 @@ function ProductListPage() {
               </div>
             </div>
           </div>
-          <div className="d-grid gap-2 col-4 mx-auto">
-            <button
-              className="btn btn-success text-primary fw-bold btn-lg mt-5"
-              type="submit"
-            >
-              Show More Products
-            </button>
-          </div>
         </div>
       </div>
     </section>
