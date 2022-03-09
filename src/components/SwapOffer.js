@@ -57,13 +57,15 @@ function SwapOffer(props) {
           <div className="card-body py-5">
             <form onSubmit={handleSubmit}>
               <div className="col-12">
-                <div className="p-5">
-                  <h3 className="fw-normal mb-5">New Trade Offer</h3>
+                <div className="p-2">
+                  <h3 className="fw-normal mb-2">
+                    Make An <span className="text-success">Offer</span>
+                  </h3>
                   <div className="row mb-3">
                     <div className="col-12">
                       <div className="form-group">
                         <label htmlFor="buyerItem" className="form-label">
-                          Title
+                          My item for swap
                         </label>
                         <input
                           type="text"
@@ -79,7 +81,7 @@ function SwapOffer(props) {
                     <div className="col-12">
                       <div className="form-group">
                         <label htmlFor="comment" className="form-label">
-                          Description
+                          Comments to seller
                         </label>
                         <input
                           type="text"
