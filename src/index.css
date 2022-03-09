@@ -8,14 +8,13 @@ body {
 a {
   list-style: none;
   color: #57de39;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 a:hover,
 a:focus,
 a:active {
   color: #5af275;
-  text-shadow: 0 0 10px #5af275, 0 0 10px #57de39;
 }
 
 .bg-ps {
