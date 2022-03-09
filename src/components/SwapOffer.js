@@ -54,7 +54,7 @@ function SwapOffer(props) {
     <div className="container SwapOffer">
       <div className="row">
         <div className="card card-registration my-5">
-          <div className="card-body py-5">
+          <div className="card-body py-2">
             <form onSubmit={handleSubmit}>
               <div className="col-12">
                 <div className="p-2">
@@ -96,7 +96,7 @@ function SwapOffer(props) {
                   <div className="row">
                     <div className="col-12">
                       <button
-                        className="btn btn-success btn-lg mt-5"
+                        className="btn btn-primary text-white btn-lg fw-bold d-block mt-3"
                         type="submit"
                       >
                         Send Offer
