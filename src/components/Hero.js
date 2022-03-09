@@ -27,7 +27,7 @@ function Hero() {
             <p className="lead">
               Browse our collection and get a fair exchange!
             </p>
-            <div className="d-grid gap-2 d-md-flex justify-content-center">
+            <div className="d-grid gap-2 d-md-flex justify-content-end">
               {!isLoggedIn && (
                 <>
                   <Link
