@@ -58,7 +58,7 @@ function SwapOffer(props) {
             <form onSubmit={handleSubmit}>
               <div className="col-12">
                 <div className="p-2">
-                  <h3 className="fw-normal mb-2">
+                  <h3 className="fw-bold mb-2">
                     Make An <span className="text-success">Offer</span>
                   </h3>
                   <div className="row mb-3">
@@ -96,7 +96,7 @@ function SwapOffer(props) {
                   <div className="row">
                     <div className="col-12">
                       <button
-                        className="btn btn-primary text-white btn-lg fw-bold d-block mt-3"
+                        className="btn btn-success text-primary btn-lg fw-bold d-block mt-3"
                         type="submit"
                       >
                         Send Offer
