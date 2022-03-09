@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useNavigate } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const API_URL = "https://swapstation.herokuapp.com";
@@ -56,7 +57,7 @@ function AuthProviderWrapper(props) {
   };
 
   const logOutUser = () => {
-    //navigate("/");
+    navigate("/");
     // To log out the user, remove the token
     removeToken();
     // and update the state variables
