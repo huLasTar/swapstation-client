@@ -53,7 +53,7 @@ function SwapOffer(props) {
   return (
     <div className="container SwapOffer">
       <div className="row">
-        <div className="card card-registration my-5">
+        <div className="card card-swapoffer bg-primary text-white my-5">
           <div className="card-body py-2">
             <form onSubmit={handleSubmit}>
               <div className="col-12">

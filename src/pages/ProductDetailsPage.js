@@ -53,12 +53,59 @@ function ProductDetailsPage(props) {
                     <>
                       <h3 className="fw-normal mb-3">{product.title}</h3>
                       <hr />
-                      <h5 className="fw-normal mb-3">
-                        Category: {product.category}
-                      </h5>
-                      <h5 className="fw-normal mb-3">
-                        Condition: {product.condition}
-                      </h5>
+                      {product.category === "PS5" && (
+                        <h5 className="fw-normal mb-3">
+                          Category: PlayStation 5
+                        </h5>
+                      )}
+                      {product.category === "PS4" && (
+                        <h5 className="fw-normal mb-3">
+                          Category: PlayStation 4
+                        </h5>
+                      )}
+                      {product.category === "PS3" && (
+                        <h5 className="fw-normal mb-3">
+                          Category: PlayStation 3
+                        </h5>
+                      )}
+                      {product.category === "PS2" && (
+                        <h5 className="fw-normal mb-3">
+                          Category: PlayStation 2
+                        </h5>
+                      )}
+                      {product.category === "PS1" && (
+                        <h5 className="fw-normal mb-3">
+                          Category: PlayStation 1
+                        </h5>
+                      )}
+                      {product.category === "PSVita" && (
+                        <h5 className="fw-normal mb-3">
+                          Category: PlayStation Vita
+                        </h5>
+                      )}
+                      {product.category === "PSP" && (
+                        <h5 className="fw-normal mb-3">
+                          Category: PlayStation Portable
+                        </h5>
+                      )}
+                      {product.condition === "new" && (
+                        <h5 className="fw-normal mb-3">Condition: New</h5>
+                      )}
+                      {product.condition === "usednew" && (
+                        <h5 className="fw-normal mb-3">
+                          Condition: Used - Like New
+                        </h5>
+                      )}
+                      {product.condition === "usedgood" && (
+                        <h5 className="fw-normal mb-3">
+                          Condition: Used - Good
+                        </h5>
+                      )}
+                      {product.condition === "usedfair" && (
+                        <h5 className="fw-normal mb-3">
+                          Condition: Used - Fair
+                        </h5>
+                      )}
                       <h5 className="fw-normal mb-3">
                         Uploaded by: {product.seller.username}
                       </h5>
@@ -99,7 +146,7 @@ function ProductDetailsPage(props) {
             </div>
             <Link
               to="/products"
-              className="btn btn-outline-primary btn-lg text-primary fw-bold my-5"
+              className="btn btn-primary btn-lg text-white fw-bold my-5"
             >
               Back to products
             </Link>
