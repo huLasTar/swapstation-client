@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { AuthContext } from "../context/auth.context";
 import axios from "axios";
 
-const API_URL = "http://localhost:5005";
+const API_URL = "https://swapstation.herokuapp.com";
 
 function ProductDetailsPage(props) {
   const [product, setProduct] = useState(null);

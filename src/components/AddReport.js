@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { AuthContext } from "../context/auth.context";
 import axios from "axios";
 
-const API_URL = "http://localhost:5005";
+const API_URL = "https://swapstation.herokuapp.com";
 
 function AddReport(props) {
   const { user } = useContext(AuthContext);
