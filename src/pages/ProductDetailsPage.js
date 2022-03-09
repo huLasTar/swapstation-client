@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
+import { AuthContext } from "../context/auth.context";
 import axios from "axios";
 
 const API_URL = "http://localhost:5005";
@@ -7,6 +8,7 @@ const API_URL = "http://localhost:5005";
 function ProductDetailsPage(props) {
   const [product, setProduct] = useState(null);
   const { id } = useParams();
+  const { user } = useContext(AuthContext);
 
   const getProduct = () => {
     // Get the token from the localStorage
@@ -79,17 +81,19 @@ function ProductDetailsPage(props) {
                     Make an offer
                   </Link>
                   <Link
-                    to={`/report/${id}`}
+                    to={`/reports/${id}`}
                     className="btn btn-danger btn-lg text-white fw-bold d-block mt-5"
                   >
                     Report Product
                   </Link>
-                  <Link
-                    to={`/products/edit/${id}`}
-                    className="btn btn-warning btn-lg text-dark fw-bold d-block mt-5"
-                  >
-                    Edit Product
-                  </Link>
+                  {product && product.seller._id === user._id && (
+                    <Link
+                      to={`/products/edit/${id}`}
+                      className="btn btn-warning btn-lg text-dark fw-bold d-block mt-5"
+                    >
+                      Edit Product
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>

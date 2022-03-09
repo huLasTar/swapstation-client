@@ -23,7 +23,6 @@ function ProductListPage() {
   // by setting the empty dependency array - []
   useEffect(() => {
     getAllProducts();
-    // console.log();
   }, []);
 
   return (

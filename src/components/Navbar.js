@@ -22,13 +22,11 @@ function Navbar() {
             <Link to="/products/create" className="btn btn-outline-success">
               New Product
             </Link>
-            <Link to="/profile" className="btn btn-outline-success">
-              Profile
-            </Link>
+
             <button className="btn btn-outline-danger" onClick={logOutUser}>
               Logout
             </button>
-            <span className="badge bg-success text-dark">
+            <span className="badge bg-secondary text-dark">
               Welcome, {user && user.username}
             </span>
           </>

@@ -32,3 +32,7 @@ a.nav-link:active {
   color: #5af275;
   text-shadow: 0 0 10px #5af275, 0 0 10px #57de39;
 }
+
+.card a {
+  text-decoration: none;
+}
