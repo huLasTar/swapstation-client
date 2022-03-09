@@ -107,7 +107,10 @@ function ProductDetailsPage(props) {
                         </h5>
                       )}
                       <h5 className="fw-normal mb-3">
-                        Uploaded by: {product.seller.username}
+                        Seller: {product.seller.username}
+                      </h5>
+                      <h5 className="fw-normal mb-3">
+                        Location: {product.seller.city}
                       </h5>
                       <h5 className="fw-normal mb-3">
                         Purchasable: {product.purchasable ? "Yes" : "No"}
