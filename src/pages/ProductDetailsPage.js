@@ -126,7 +126,7 @@ function ProductDetailsPage(props) {
                     </>
                   )}
 
-                  <SwapOffer />
+                  {product && product.seller._id !== user._id && <SwapOffer />}
 
                   {product && product.seller._id !== user._id && (
                     <Link
