@@ -57,12 +57,14 @@ function Navbar() {
 
         {!isLoggedIn && (
           <>
-            <Link to="/signup" className="btn btn-outline-success fw-normal">
-              Sign Up
-            </Link>
-            <Link to="/login" className="btn btn-outline-success fw-normal">
-              Login
-            </Link>
+            <div className="btn-group">
+              <Link to="/signup" className="btn btn-outline-success fw-normal">
+                Sign Up
+              </Link>
+              <Link to="/login" className="btn btn-outline-success fw-normal">
+                Login
+              </Link>
+            </div>
           </>
         )}
       </div>
