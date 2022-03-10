@@ -24,7 +24,7 @@ function Navbar() {
         <div className="collapse navbar-collapse mx-5" id="navbarNav">
           <ul className="navbar-nav text-center">
             <li className="nav-item">
-              <HashLink smooth className="nav-link text-success" to="#about">
+              <HashLink smooth className="nav-link text-success" to="/#about">
                 About
               </HashLink>
             </li>
