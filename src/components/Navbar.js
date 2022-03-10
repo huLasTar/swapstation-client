@@ -14,6 +14,8 @@ function Navbar() {
             <img
               src="https://res.cloudinary.com/hulastar/image/upload/v1646911790/SwapStation/swapstation_logo_qscp3u.png"
               alt=""
+              width="56"
+              height="75"
             />
             SwapStation
           </h1>
