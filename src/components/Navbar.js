@@ -29,6 +29,11 @@ function Navbar() {
               </HashLink>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="#products">
+                Products
+              </Link>
+            </li>
+            <li className="nav-item">
               <HashLink smooth className="nav-link" to="#faq">
                 FAQ
               </HashLink>
@@ -38,16 +43,6 @@ function Navbar() {
                 Contact
               </HashLink>
             </li>
-
-            {isLoggedIn && (
-              <>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/products">
-                    Products
-                  </Link>
-                </li>
-              </>
-            )}
           </ul>
         </div>
 
