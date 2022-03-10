@@ -45,7 +45,6 @@ function AuthProviderWrapper(props) {
         });
     } else {
       // If the token is not available (or is removed)
-      navigate("/");
       setIsLoggedIn(false);
       setIsLoading(false);
       setUser(null);

@@ -65,7 +65,9 @@ function SignupPage(props) {
             <form className="row" onSubmit={handleSignupSubmit}>
               <div className="col-6">
                 <div className="p-5">
-                  <h3 className="fw-normal mb-5">General Infomation</h3>
+                  <h3 className="fw-normal mb-5">
+                    General <span className="text-success">Infomation</span>
+                  </h3>
 
                   <div className="row mb-3">
                     <div className="col-6">
@@ -152,7 +154,9 @@ function SignupPage(props) {
               </div>
               <div className="col-6">
                 <div className="p-5">
-                  <h3 className="fw-normal mb-5">Contact Details</h3>
+                  <h3 className="fw-normal mb-5">
+                    Contact <span className="text-success">Details</span>
+                  </h3>
 
                   <div className="row mb-3">
                     <div className="col-12">
@@ -221,7 +225,7 @@ function SignupPage(props) {
                   <div className="row">
                     <div className="col-12">
                       <button
-                        className="btn btn-success btn-lg mt-5"
+                        className="btn btn-success btn-lg fw-bold mt-5"
                         type="submit"
                       >
                         Submit
@@ -238,8 +242,10 @@ function SignupPage(props) {
               </p>
             )}
 
-            <h3 className="fw-normal m-0">Already have account?</h3>
-            <Link className="btn btn-success btn-lg mt-5" to={"/login"}>
+            <h3 className="fw-normal m-0">
+              Already have <span className="text-success">account?</span>
+            </h3>
+            <Link className="btn btn-success btn-lg fw-bold mt-5" to={"/login"}>
               Login
             </Link>
           </div>
