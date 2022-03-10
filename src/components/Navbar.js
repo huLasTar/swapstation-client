@@ -13,15 +13,15 @@ function Navbar() {
           <h1 className="navbar-brand m-0">SwapStation</h1>
         </Link>
 
-        {/*}
-        <Link to="#about">About</Link>
-        */}
         <HashLink smooth to="#about">
           About
         </HashLink>
-
-        <Link to="#faq">FAQ</Link>
-        <Link to="#contact">Contact</Link>
+        <HashLink smooth to="#faq">
+          FAQ
+        </HashLink>
+        <HashLink smooth to="#contact">
+          Contact
+        </HashLink>
 
         {isLoggedIn && (
           <>
