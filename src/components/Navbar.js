@@ -10,7 +10,13 @@ function Navbar() {
     <nav className="navbar fixed-top navbar-dark bg-dark border-0 m-0">
       <div className="container">
         <Link to="/">
-          <h1 className="navbar-brand m-0">SwapStation</h1>
+          <h1 className="navbar-brand m-0">
+            <img
+              src="https://res.cloudinary.com/hulastar/image/upload/v1646911790/SwapStation/swapstation_logo_qscp3u.png"
+              alt=""
+            />
+            SwapStation
+          </h1>
         </Link>
 
         <HashLink smooth to="#about">
