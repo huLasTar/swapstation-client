@@ -48,18 +48,20 @@ function Navbar() {
 
         {isLoggedIn && (
           <>
-            <Link
-              to="/products/create"
-              className="btn btn-outline-success fw-normal"
-            >
-              New Product
-            </Link>
-            <button
-              className="btn btn-outline-danger fw-normaol"
-              onClick={logOutUser}
-            >
-              Logout
-            </button>
+            <div className="btn-group">
+              <Link
+                to="/products/create"
+                className="btn btn-outline-success fw-normal"
+              >
+                New Product
+              </Link>
+              <button
+                className="btn btn-outline-danger fw-normaol"
+                onClick={logOutUser}
+              >
+                Logout
+              </button>
+            </div>
             <span className="badge bg-secondary text-dark fw-normal">
               Welcome, {user && user.username}
             </span>
