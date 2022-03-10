@@ -38,14 +38,6 @@ function ProductDetailsPage(props) {
             <div className="row">
               <div className="col-6">
                 <div className="p-0">
-                  <div className="text-right d-block">
-                    <Link
-                      to="/products"
-                      className="text-lg text-primary fw-bold my-5"
-                    >
-                      &laquo; Back to products
-                    </Link>
-                  </div>
                   {product && (
                     <img
                       className="img-fluid rounded-start"
@@ -56,6 +48,14 @@ function ProductDetailsPage(props) {
                 </div>
               </div>
               <div className="col-6 text-start">
+                <div className="text-right d-block">
+                  <Link
+                    to="/products"
+                    className="text-lg text-primary fw-bold my-5"
+                  >
+                    &laquo; Back to products
+                  </Link>
+                </div>
                 <div className="p-5">
                   {product && (
                     <>
