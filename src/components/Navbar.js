@@ -7,7 +7,7 @@ function Navbar() {
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
   return (
-    <nav className="navbar fixed-top navbar-dark bg-dark fw-bold border-0 m-0">
+    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fw-bold border-0 m-0">
       <div className="container">
         <Link to="/">
           <h1 className="navbar-brand m-0">
@@ -23,17 +23,17 @@ function Navbar() {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li class="nav-item">
+            <li className="nav-item">
               <HashLink smooth className="nav-link" to="#about">
                 About
               </HashLink>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <HashLink smooth className="nav-link" to="#faq">
                 FAQ
               </HashLink>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <HashLink smooth className="nav-link" to="#contact">
                 Contact
               </HashLink>
@@ -41,7 +41,7 @@ function Navbar() {
 
             {isLoggedIn && (
               <>
-                <li class="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link" to="/products">
                     Products
                   </Link>
