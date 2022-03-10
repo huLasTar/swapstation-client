@@ -64,14 +64,14 @@ function SignupPage(props) {
           <div className="card card-registration bg-primary text-white border border-success shadow-sm my-5">
             <div className="card-body py-5">
               <form className="row" onSubmit={handleSignupSubmit}>
-                <div className="col-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="p-5">
                     <h3 className="fw-bold mb-5">
                       General <span className="text-success">Infomation</span>
                     </h3>
 
                     <div className="row mb-3">
-                      <div className="col-6">
+                      <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="form-group">
                           <label htmlFor="firstName" className="form-label">
                             First Name
@@ -85,7 +85,7 @@ function SignupPage(props) {
                           />
                         </div>
                       </div>
-                      <div className="col-6">
+                      <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="form-group">
                           <label htmlFor="lastName" className="form-label">
                             Last Name
@@ -153,7 +153,7 @@ function SignupPage(props) {
                     </div>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="p-5">
                     <h3 className="fw-bold mb-5">
                       Contact <span className="text-success">Details</span>
@@ -194,7 +194,7 @@ function SignupPage(props) {
                     </div>
 
                     <div className="row mb-3">
-                      <div className="col-6">
+                      <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="form-group">
                           <label htmlFor="zipCode" className="form-label">
                             Zip Code
@@ -208,7 +208,7 @@ function SignupPage(props) {
                           />
                         </div>
                       </div>
-                      <div className="col-6">
+                      <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="form-group">
                           <label htmlFor="phoneNumber" className="form-label">
                             Phone Number
@@ -223,21 +223,11 @@ function SignupPage(props) {
                         </div>
                       </div>
                     </div>
-                    <div className="row">
-                      <div className="col-12">
-                        <button
-                          className="btn btn-success text-primary btn-lg fw-bold mt-5"
-                          type="submit"
-                        >
-                          Submit
-                        </button>
-                      </div>
-                    </div>
                   </div>
                 </div>
                 <div className="col-12">
                   <button
-                    className="btn btn-success text-primary btn-lg fw-bold mt-5"
+                    className="btn btn-success text-primary btn-lg fw-bold"
                     type="submit"
                   >
                     Submit
@@ -251,11 +241,11 @@ function SignupPage(props) {
                 </p>
               )}
 
-              <h3 className="fw-bold m-0">
+              <h3 className="fw-bold my-4">
                 Already have <span className="text-success">account?</span>
               </h3>
               <Link
-                className="btn btn-success text-primary btn-lg fw-bold mt-3"
+                className="btn btn-success text-primary btn-lg fw-bold"
                 to={"/login"}
               >
                 Login

@@ -80,7 +80,7 @@ function LoginPage(props) {
                 <div className="row">
                   <div className="col-12">
                     <button
-                      className="btn btn-success btn-lg mt-5"
+                      className="btn btn-success btn-lg text-primary fw-bold"
                       type="submit"
                     >
                       Login
@@ -95,11 +95,11 @@ function LoginPage(props) {
                 </p>
               )}
 
-              <h3 className="fw-bold m-0">
+              <h3 className="fw-bold my-4">
                 Don't have an <span className="text-success">account yet?</span>
               </h3>
               <Link
-                className="btn btn-success text-primary btn-lg mt-5"
+                className="btn btn-success btn-lg text-primary fw-bold"
                 to={"/signup"}
               >
                 Sign Up
