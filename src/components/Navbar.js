@@ -17,7 +17,7 @@ function Navbar() {
               width="56"
               height="75"
             />
-            SwapStation
+            Swap<span className="text-success">Station</span>
           </h1>
         </Link>
 
