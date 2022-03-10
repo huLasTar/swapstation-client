@@ -234,27 +234,40 @@ function EditProductPage(props) {
                           onChange={(e) => handleFileUpload(e)}
                           className="form-control"
                         />
-                        <small>Current image: {imageUrl}</small>
                       </div>
                     </div>
                   </div>
 
-                  <div className="row">
-                    <div className="col-12">
-                      <button
-                        className="btn btn-success btn-lg text-primary fw-bold mt-5"
-                        type="submit"
-                      >
-                        Submit
-                      </button>
+                  {!imageUrl && (
+                    <div className="row">
+                      <div className="col-12">
+                        <button
+                          className="btn btn-success btn-lg text-primary fw-bold mt-4"
+                          type="submit"
+                          disabled={true}
+                        >
+                          Save changes
+                        </button>
+                      </div>
                     </div>
-                  </div>
+                  )}
+                  {imageUrl && (
+                    <div className="row">
+                      <div className="col-12">
+                        <button
+                          className="btn btn-success btn-lg text-primary fw-bold mt-4"
+                          type="submit"
+                        >
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </form>
-
             <button
-              className="btn btn-danger btn-lg text-white fw-bold mt-5"
+              className="btn btn-danger btn-lg text-white fw-bold mt-4"
               onClick={deleteProduct}
             >
               Delete Product

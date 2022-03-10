@@ -215,7 +215,7 @@ function AddProductPage(props) {
                       <div className="row">
                         <div className="col-12">
                           <button
-                            className="btn btn-success btn-lg mt-5"
+                            className="btn btn-success btn-lg text-primary fw-bold mt-4"
                             type="submit"
                             disabled={true}
                           >
@@ -228,7 +228,7 @@ function AddProductPage(props) {
                       <div className="row">
                         <div className="col-12">
                           <button
-                            className="btn btn-success btn-lg text-primary fw-bold mt-5"
+                            className="btn btn-success btn-lg text-primary fw-bold mt-4"
                             type="submit"
                             disabled={false}
                           >
