@@ -70,7 +70,7 @@ function AddProductPage(props) {
   return (
     <div className="container AddProduct">
       <div className="row">
-        <div className="card card-addproduct border border-success my-5">
+        <div className="card card-addproduct border border-success shadow-sm my-5">
           <div className="card-body py-5">
             <form onSubmit={handleSubmit}>
               <div className="col-12">
