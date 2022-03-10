@@ -37,66 +37,71 @@ function LoginPage(props) {
   };
 
   return (
-    <div className="container SignupPage">
-      <div className="row">
-        <div className="card card-login border border-success shadow-sm my-5">
-          <div className="card-body py-5">
-            <h3 className="fw-normal mb-5">Sign In</h3>
+    <section id="LoginPage">
+      <div className="container">
+        <div className="row">
+          <div className="card card-login border border-success shadow-sm my-5">
+            <div className="card-body py-5">
+              <h3 className="fw-normal mb-5">Sign In</h3>
 
-            <form onSubmit={handleLoginSubmit}>
-              <div className="row">
-                <div className="col-12">
-                  <div className="form-group">
-                    <label htmlFor="username" className="form-label">
-                      Username
-                    </label>
-                    <input
-                      className="form-control"
-                      type="username"
-                      name="username"
-                      value={username}
-                      onChange={handleUsername}
-                    />
-                  </div>
+              <form onSubmit={handleLoginSubmit}>
+                <div className="row">
+                  <div className="col-12">
+                    <div className="form-group">
+                      <label htmlFor="username" className="form-label">
+                        Username
+                      </label>
+                      <input
+                        className="form-control"
+                        type="username"
+                        name="username"
+                        value={username}
+                        onChange={handleUsername}
+                      />
+                    </div>
 
-                  <div className="form-group">
-                    <label htmlFor="password" className="form-label">
-                      Password
-                    </label>
-                    <input
-                      className="form-control"
-                      type="password"
-                      name="password"
-                      value={password}
-                      onChange={handlePassword}
-                    />
+                    <div className="form-group">
+                      <label htmlFor="password" className="form-label">
+                        Password
+                      </label>
+                      <input
+                        className="form-control"
+                        type="password"
+                        name="password"
+                        value={password}
+                        onChange={handlePassword}
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="row">
-                <div className="col-12">
-                  <button className="btn btn-success btn-lg mt-5" type="submit">
-                    Login
-                  </button>
+                <div className="row">
+                  <div className="col-12">
+                    <button
+                      className="btn btn-success btn-lg mt-5"
+                      type="submit"
+                    >
+                      Login
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
 
-            {errorMessage && (
-              <p className="error-message d-inline-block bg-danger text-white fw-bold px-5 py-2 m-5">
-                {errorMessage}
-              </p>
-            )}
+              {errorMessage && (
+                <p className="error-message d-inline-block bg-danger text-white fw-bold px-5 py-2 m-5">
+                  {errorMessage}
+                </p>
+              )}
 
-            <h3 className="fw-normal m-0">Don't have an account yet?</h3>
-            <Link className="btn btn-success btn-lg mt-5" to={"/signup"}>
-              Sign Up
-            </Link>
+              <h3 className="fw-normal m-0">Don't have an account yet?</h3>
+              <Link className="btn btn-success btn-lg mt-5" to={"/signup"}>
+                Sign Up
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

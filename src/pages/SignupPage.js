@@ -58,200 +58,205 @@ function SignupPage(props) {
   };
 
   return (
-    <div className="container SignupPage">
-      <div className="row">
-        <div className="card card-registration border border-success shadow-sm my-5">
-          <div className="card-body py-5">
-            <form className="row" onSubmit={handleSignupSubmit}>
-              <div className="col-6">
-                <div className="p-5">
-                  <h3 className="fw-normal mb-5">
-                    General <span className="text-success">Infomation</span>
-                  </h3>
+    <section id="SignupPage">
+      <div className="container">
+        <div className="row">
+          <div className="card card-registration border border-success shadow-sm my-5">
+            <div className="card-body py-5">
+              <form className="row" onSubmit={handleSignupSubmit}>
+                <div className="col-6">
+                  <div className="p-5">
+                    <h3 className="fw-normal mb-5">
+                      General <span className="text-success">Infomation</span>
+                    </h3>
 
-                  <div className="row mb-3">
-                    <div className="col-6">
-                      <div className="form-group">
-                        <label htmlFor="firstName" className="form-label">
-                          First Name
-                        </label>
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="firstName"
-                          value={firstName}
-                          onChange={handleFirstName}
-                        />
+                    <div className="row mb-3">
+                      <div className="col-6">
+                        <div className="form-group">
+                          <label htmlFor="firstName" className="form-label">
+                            First Name
+                          </label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            name="firstName"
+                            value={firstName}
+                            onChange={handleFirstName}
+                          />
+                        </div>
+                      </div>
+                      <div className="col-6">
+                        <div className="form-group">
+                          <label htmlFor="lastName" className="form-label">
+                            Last Name
+                          </label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            name="lastName"
+                            value={lastName}
+                            onChange={handleLastName}
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div className="col-6">
-                      <div className="form-group">
-                        <label htmlFor="lastName" className="form-label">
-                          Last Name
-                        </label>
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="lastName"
-                          value={lastName}
-                          onChange={handleLastName}
-                        />
+
+                    <div className="row mb-3">
+                      <div className="col-12">
+                        <div className="form-group">
+                          <label htmlFor="email" className="form-label">
+                            Email Address
+                          </label>
+                          <input
+                            className="form-control"
+                            type="email"
+                            name="email"
+                            value={email}
+                            onChange={handleEmail}
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="row mb-3">
-                    <div className="col-12">
-                      <div className="form-group">
-                        <label htmlFor="email" className="form-label">
-                          Email Address
-                        </label>
-                        <input
-                          className="form-control"
-                          type="email"
-                          name="email"
-                          value={email}
-                          onChange={handleEmail}
-                        />
+                    <div className="row mb-3">
+                      <div className="col-12">
+                        <div className="form-group">
+                          <label htmlFor="username" className="form-label">
+                            Username
+                          </label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            name="username"
+                            value={username}
+                            onChange={handleUsername}
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="row mb-3">
-                    <div className="col-12">
-                      <div className="form-group">
-                        <label htmlFor="username" className="form-label">
-                          Username
-                        </label>
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="username"
-                          value={username}
-                          onChange={handleUsername}
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="row mb-3">
-                    <div className="col-12">
-                      <div className="form-group">
-                        <label htmlFor="password" className="form-label">
-                          Password
-                        </label>
-                        <input
-                          className="form-control"
-                          type="password"
-                          name="password"
-                          value={password}
-                          onChange={handlePassword}
-                        />
+                    <div className="row mb-3">
+                      <div className="col-12">
+                        <div className="form-group">
+                          <label htmlFor="password" className="form-label">
+                            Password
+                          </label>
+                          <input
+                            className="form-control"
+                            type="password"
+                            name="password"
+                            value={password}
+                            onChange={handlePassword}
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-6">
-                <div className="p-5">
-                  <h3 className="fw-normal mb-5">
-                    Contact <span className="text-success">Details</span>
-                  </h3>
+                <div className="col-6">
+                  <div className="p-5">
+                    <h3 className="fw-normal mb-5">
+                      Contact <span className="text-success">Details</span>
+                    </h3>
 
-                  <div className="row mb-3">
-                    <div className="col-12">
-                      <div className="form-group">
-                        <label htmlFor="address" className="form-label">
-                          Address
-                        </label>
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="address"
-                          value={address}
-                          onChange={handleAddress}
-                        />
+                    <div className="row mb-3">
+                      <div className="col-12">
+                        <div className="form-group">
+                          <label htmlFor="address" className="form-label">
+                            Address
+                          </label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            name="address"
+                            value={address}
+                            onChange={handleAddress}
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="row mb-3">
-                    <div className="col-12">
-                      <div className="form-group">
-                        <label htmlFor="city" className="form-label">
-                          City
-                        </label>
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="city"
-                          value={city}
-                          onChange={handleCity}
-                        />
+                    <div className="row mb-3">
+                      <div className="col-12">
+                        <div className="form-group">
+                          <label htmlFor="city" className="form-label">
+                            City
+                          </label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            name="city"
+                            value={city}
+                            onChange={handleCity}
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="row mb-3">
-                    <div className="col-6">
-                      <div className="form-group">
-                        <label htmlFor="zipCode" className="form-label">
-                          Zip Code
-                        </label>
-                        <input
-                          className="form-control"
-                          type="number"
-                          name="zipCode"
-                          value={zipCode}
-                          onChange={handleZipCode}
-                        />
+                    <div className="row mb-3">
+                      <div className="col-6">
+                        <div className="form-group">
+                          <label htmlFor="zipCode" className="form-label">
+                            Zip Code
+                          </label>
+                          <input
+                            className="form-control"
+                            type="number"
+                            name="zipCode"
+                            value={zipCode}
+                            onChange={handleZipCode}
+                          />
+                        </div>
+                      </div>
+                      <div className="col-6">
+                        <div className="form-group">
+                          <label htmlFor="phoneNumber" className="form-label">
+                            Phone Number
+                          </label>
+                          <input
+                            className="form-control"
+                            type="number"
+                            name="phoneNumber"
+                            value={phoneNumber}
+                            onChange={handlePhoneNumber}
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div className="col-6">
-                      <div className="form-group">
-                        <label htmlFor="phoneNumber" className="form-label">
-                          Phone Number
-                        </label>
-                        <input
-                          className="form-control"
-                          type="number"
-                          name="phoneNumber"
-                          value={phoneNumber}
-                          onChange={handlePhoneNumber}
-                        />
+                    <div className="row">
+                      <div className="col-12">
+                        <button
+                          className="btn btn-success btn-lg fw-bold mt-5"
+                          type="submit"
+                        >
+                          Submit
+                        </button>
                       </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-12">
-                      <button
-                        className="btn btn-success btn-lg fw-bold mt-5"
-                        type="submit"
-                      >
-                        Submit
-                      </button>
                     </div>
                   </div>
                 </div>
-              </div>
-            </form>
+              </form>
 
-            {errorMessage && (
-              <p className="error-message d-inline-block bg-danger text-white fw-bold px-5 py-2 m-5">
-                {errorMessage}
-              </p>
-            )}
+              {errorMessage && (
+                <p className="error-message d-inline-block bg-danger text-white fw-bold px-5 py-2 m-5">
+                  {errorMessage}
+                </p>
+              )}
 
-            <h3 className="fw-normal m-0">
-              Already have <span className="text-success">account?</span>
-            </h3>
-            <Link className="btn btn-success btn-lg fw-bold mt-5" to={"/login"}>
-              Login
-            </Link>
+              <h3 className="fw-normal m-0">
+                Already have <span className="text-success">account?</span>
+              </h3>
+              <Link
+                className="btn btn-success btn-lg fw-bold mt-5"
+                to={"/login"}
+              >
+                Login
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
