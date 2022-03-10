@@ -3,6 +3,7 @@ body {
     no-repeat center center fixed #1a1a1a;
   background-size: cover;
   margin: 0;
+  padding-top: 101px;
 }
 
 a {

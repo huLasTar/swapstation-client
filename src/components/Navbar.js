@@ -7,7 +7,7 @@ function Navbar() {
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
   return (
-    <nav className="navbar fixed-top navbar-dark bg-dark border-0 m-0">
+    <nav className="navbar fixed-top navbar-dark bg-dark fw-bold border-0 m-0">
       <div className="container">
         <Link to="/">
           <h1 className="navbar-brand m-0">
@@ -34,14 +34,20 @@ function Navbar() {
         {isLoggedIn && (
           <>
             <Link to="/products">Products</Link>
-            <Link to="/products/create" className="btn btn-outline-success">
+            <Link
+              to="/products/create"
+              className="btn btn-outline-success fw-normal"
+            >
               New Product
             </Link>
 
-            <button className="btn btn-outline-danger" onClick={logOutUser}>
+            <button
+              className="btn btn-outline-danger fw-normaol"
+              onClick={logOutUser}
+            >
               Logout
             </button>
-            <span className="badge bg-secondary text-dark">
+            <span className="badge bg-secondary text-dark fw-normal">
               Welcome, {user && user.username}
             </span>
           </>
@@ -49,10 +55,10 @@ function Navbar() {
 
         {!isLoggedIn && (
           <>
-            <Link to="/signup" className="btn btn-outline-success">
+            <Link to="/signup" className="btn btn-outline-success fw-normal">
               Sign Up
             </Link>
-            <Link to="/login" className="btn btn-outline-success">
+            <Link to="/login" className="btn btn-outline-success fw-normal">
               Login
             </Link>
           </>
