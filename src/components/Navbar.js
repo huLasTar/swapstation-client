@@ -21,19 +21,21 @@ function Navbar() {
           </h1>
         </Link>
 
-        <HashLink smooth to="#about">
+        <HashLink smooth className="navlink" to="#about">
           About
         </HashLink>
-        <HashLink smooth to="#faq">
+        <HashLink smooth className="navlink" to="#faq">
           FAQ
         </HashLink>
-        <HashLink smooth to="#contact">
+        <HashLink smooth className="navlink" to="#contact">
           Contact
         </HashLink>
 
         {isLoggedIn && (
           <>
-            <Link to="/products">Products</Link>
+            <Link className="navlink" to="/products">
+              Products
+            </Link>
             <Link
               to="/products/create"
               className="btn btn-outline-success fw-normal"
