@@ -24,22 +24,22 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <HashLink smooth className="nav-link" to="#about">
+              <HashLink smooth className="nav-link text-success" to="#about">
                 About
               </HashLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#products">
+              <Link className="nav-link text-success" to="#products">
                 Products
               </Link>
             </li>
             <li className="nav-item">
-              <HashLink smooth className="nav-link" to="#faq">
+              <HashLink smooth className="nav-link text-success" to="#faq">
                 FAQ
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink smooth className="nav-link" to="#contact">
+              <HashLink smooth className="nav-link text-success" to="#contact">
                 Contact
               </HashLink>
             </li>
