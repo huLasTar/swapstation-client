@@ -21,28 +21,44 @@ function Navbar() {
           </h1>
         </Link>
 
-        <HashLink smooth className="nav-link" to="#about">
-          About
-        </HashLink>
-        <HashLink smooth className="nav-link" to="#faq">
-          FAQ
-        </HashLink>
-        <HashLink smooth className="nav-link" to="#contact">
-          Contact
-        </HashLink>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li class="nav-item">
+              <HashLink smooth className="nav-link" to="#about">
+                About
+              </HashLink>
+            </li>
+            <li class="nav-item">
+              <HashLink smooth className="nav-link" to="#faq">
+                FAQ
+              </HashLink>
+            </li>
+            <li class="nav-item">
+              <HashLink smooth className="nav-link" to="#contact">
+                Contact
+              </HashLink>
+            </li>
+
+            {isLoggedIn && (
+              <>
+                <li class="nav-item">
+                  <Link className="nav-link" to="/products">
+                    Products
+                  </Link>
+                </li>
+              </>
+            )}
+          </ul>
+        </div>
 
         {isLoggedIn && (
           <>
-            <Link className="nav-link" to="/products">
-              Products
-            </Link>
             <Link
               to="/products/create"
               className="btn btn-outline-success fw-normal"
             >
               New Product
             </Link>
-
             <button
               className="btn btn-outline-danger fw-normaol"
               onClick={logOutUser}
