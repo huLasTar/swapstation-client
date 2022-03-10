@@ -21,7 +21,7 @@ function Navbar() {
           </h1>
         </Link>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className="collapse navbar-collapse mx-5" id="navbarNav">
           <ul className="navbar-nav text-center">
             <li className="nav-item">
               <HashLink smooth className="nav-link text-success" to="#about">
@@ -49,20 +49,17 @@ function Navbar() {
         {isLoggedIn && (
           <>
             <div className="btn-group">
-              <Link
-                to="/products/create"
-                className="btn btn-outline-success fw-normal"
-              >
+              <Link to="/products/create" className="btn btn-success fw-normal">
                 New Product
               </Link>
               <button
-                className="btn btn-outline-danger fw-normaol"
+                className="btn btn-outline-success fw-normal"
                 onClick={logOutUser}
               >
                 Logout
               </button>
             </div>
-            <span className="badge bg-secondary text-dark fw-normal">
+            <span className="badge bg-secondary text-dark fw-normal m-5">
               Welcome, {user && user.username}
             </span>
           </>
