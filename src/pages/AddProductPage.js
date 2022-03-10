@@ -82,7 +82,7 @@ function AddProductPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="title" className="form-label">
+                          <label htmlFor="title" className="form-label my-1">
                             Title
                           </label>
                           <input
@@ -98,7 +98,7 @@ function AddProductPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="category" className="form-label">
+                          <label htmlFor="category" className="form-label my-1">
                             Category
                           </label>
                           <select
@@ -121,7 +121,10 @@ function AddProductPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="condition" className="form-label">
+                          <label
+                            htmlFor="condition"
+                            className="form-label my-1"
+                          >
                             Condition
                           </label>
                           <select
@@ -141,7 +144,10 @@ function AddProductPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="description" className="form-label">
+                          <label
+                            htmlFor="description"
+                            className="form-label my-1"
+                          >
                             Description
                           </label>
                           <input
@@ -157,7 +163,10 @@ function AddProductPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="purchasable" className="form-label">
+                          <label
+                            htmlFor="purchasable"
+                            className="form-label my-1"
+                          >
                             Purchasable
                           </label>
                           <select
@@ -175,7 +184,7 @@ function AddProductPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="price" className="form-label">
+                          <label htmlFor="price" className="form-label my-1">
                             Price
                           </label>
                           <input
@@ -191,7 +200,7 @@ function AddProductPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="imageUrl" className="form-label">
+                          <label htmlFor="imageUrl" className="form-label my-1">
                             Image
                           </label>
                           <input

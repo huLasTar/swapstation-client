@@ -50,7 +50,7 @@ function LoginPage(props) {
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12 mx-auto">
                     <div className="form-group">
-                      <label htmlFor="username" className="form-label">
+                      <label htmlFor="username" className="form-label my-1">
                         Username
                       </label>
                       <input
@@ -63,7 +63,7 @@ function LoginPage(props) {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="password" className="form-label">
+                      <label htmlFor="password" className="form-label my-1">
                         Password
                       </label>
                       <input

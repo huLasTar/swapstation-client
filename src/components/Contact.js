@@ -12,14 +12,14 @@ function Contact() {
             </p>
             <form id="contactForm">
               <div className="mb-3">
-                <label className="form-label" htmlFor="name">
+                <label className="form-label my-1" htmlFor="name">
                   Name
                 </label>
                 <input className="form-control" id="name" type="text" />
               </div>
 
               <div className="mb-3">
-                <label className="form-label" htmlFor="emailAddress">
+                <label className="form-label my-1" htmlFor="emailAddress">
                   Email Address
                 </label>
                 <input
@@ -30,7 +30,7 @@ function Contact() {
               </div>
 
               <div className="mb-3">
-                <label className="form-label" htmlFor="message">
+                <label className="form-label my-1" htmlFor="message">
                   Message
                 </label>
                 <textarea

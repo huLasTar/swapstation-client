@@ -73,7 +73,10 @@ function SignupPage(props) {
                     <div className="row mb-3">
                       <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="form-group">
-                          <label htmlFor="firstName" className="form-label">
+                          <label
+                            htmlFor="firstName"
+                            className="form-label my-1"
+                          >
                             First Name
                           </label>
                           <input
@@ -87,7 +90,7 @@ function SignupPage(props) {
                       </div>
                       <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="form-group">
-                          <label htmlFor="lastName" className="form-label">
+                          <label htmlFor="lastName" className="form-label my-1">
                             Last Name
                           </label>
                           <input
@@ -104,7 +107,7 @@ function SignupPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="email" className="form-label">
+                          <label htmlFor="email" className="form-label my-1">
                             Email Address
                           </label>
                           <input
@@ -121,7 +124,7 @@ function SignupPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="username" className="form-label">
+                          <label htmlFor="username" className="form-label my-1">
                             Username
                           </label>
                           <input
@@ -138,7 +141,7 @@ function SignupPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="password" className="form-label">
+                          <label htmlFor="password" className="form-label my-1">
                             Password
                           </label>
                           <input
@@ -162,7 +165,7 @@ function SignupPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="address" className="form-label">
+                          <label htmlFor="address" className="form-label my-1">
                             Address
                           </label>
                           <input
@@ -179,7 +182,7 @@ function SignupPage(props) {
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
-                          <label htmlFor="city" className="form-label">
+                          <label htmlFor="city" className="form-label my-1">
                             City
                           </label>
                           <input
@@ -196,7 +199,7 @@ function SignupPage(props) {
                     <div className="row mb-3">
                       <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="form-group">
-                          <label htmlFor="zipCode" className="form-label">
+                          <label htmlFor="zipCode" className="form-label my-1">
                             Zip Code
                           </label>
                           <input
@@ -210,7 +213,10 @@ function SignupPage(props) {
                       </div>
                       <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="form-group">
-                          <label htmlFor="phoneNumber" className="form-label">
+                          <label
+                            htmlFor="phoneNumber"
+                            className="form-label my-1"
+                          >
                             Phone Number
                           </label>
                           <input
