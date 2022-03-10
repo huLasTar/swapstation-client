@@ -234,7 +234,7 @@ function EditProductPage(props) {
                   <div className="row">
                     <div className="col-12">
                       <button
-                        className="btn btn-success btn-lg mt-5"
+                        className="btn btn-success btn-lg text-primary fw-bold mt-5"
                         type="submit"
                       >
                         Submit
@@ -246,7 +246,7 @@ function EditProductPage(props) {
             </form>
 
             <button
-              className="btn btn-danger btn-lg mt-5"
+              className="btn btn-danger btn-lg text-white fw-bold mt-5"
               onClick={deleteProduct}
             >
               Delete Product
