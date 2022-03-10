@@ -24,65 +24,65 @@ function ProductCard({
           <div className="card-text p-0">
             <div className="badges my-2">
               {category === "PS5" && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   PlayStation 5
                 </p>
               )}
               {category === "PS4" && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   PlayStation 4
                 </p>
               )}
               {category === "PS3" && (
-                <p className="badge bg-outline-success text-success">
+                <p className="btn bt-outline-success text-success">
                   PlayStation 3
                 </p>
               )}
               {category === "PS2" && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   PlayStation 2
                 </p>
               )}
               {category === "PS1" && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   PlayStation 1
                 </p>
               )}
               {category === "PSVita" && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   PlayStation Vita
                 </p>
               )}
               {category === "PSP" && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   PlayStation Portable
                 </p>
               )}
               {condition === "new" && (
-                <p className="badge bg-outline-success text-success m-1">New</p>
+                <p className="btn bt-outline-success text-success m-1">New</p>
               )}
               {condition === "usednew" && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   Used - Like New
                 </p>
               )}
               {condition === "usedgood" && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   Used - Good
                 </p>
               )}
               {condition === "usedfair" && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   Used - Fair
                 </p>
               )}
               {purchasable && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   Swap & Buy
                 </p>
               )}
               {!purchasable && (
-                <p className="badge bg-outline-success text-success m-1">
+                <p className="btn bt-outline-success text-success m-1">
                   Swap Only
                 </p>
               )}
