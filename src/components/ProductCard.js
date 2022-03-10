@@ -24,68 +24,38 @@ function ProductCard({
           <div className="card-text p-0">
             <div className="badges my-2">
               {category === "PS5" && (
-                <p className="btn bt-outline-success text-success m-1">
-                  PlayStation 5
-                </p>
+                <p className="text-white m-1">PlayStation 5</p>
               )}
               {category === "PS4" && (
-                <p className="btn bt-outline-success text-success m-1">
-                  PlayStation 4
-                </p>
+                <p className="text-white m-1">PlayStation 4</p>
               )}
               {category === "PS3" && (
-                <p className="btn bt-outline-success text-success">
-                  PlayStation 3
-                </p>
+                <p className="text-white">PlayStation 3</p>
               )}
               {category === "PS2" && (
-                <p className="btn bt-outline-success text-success m-1">
-                  PlayStation 2
-                </p>
+                <p className="text-white m-1">PlayStation 2</p>
               )}
               {category === "PS1" && (
-                <p className="btn bt-outline-success text-success m-1">
-                  PlayStation 1
-                </p>
+                <p className="text-white m-1">PlayStation 1</p>
               )}
               {category === "PSVita" && (
-                <p className="btn bt-outline-success text-success m-1">
-                  PlayStation Vita
-                </p>
+                <p className="text-white m-1">PlayStation Vita</p>
               )}
               {category === "PSP" && (
-                <p className="btn bt-outline-success text-success m-1">
-                  PlayStation Portable
-                </p>
+                <p className="text-white m-1">PlayStation Portable</p>
               )}
-              {condition === "new" && (
-                <p className="btn bt-outline-success text-success m-1">New</p>
-              )}
+              {condition === "new" && <p className="text-white m-1">New</p>}
               {condition === "usednew" && (
-                <p className="btn bt-outline-success text-success m-1">
-                  Used - Like New
-                </p>
+                <p className="text-white m-1">Used - Like New</p>
               )}
               {condition === "usedgood" && (
-                <p className="btn bt-outline-success text-success m-1">
-                  Used - Good
-                </p>
+                <p className="text-white m-1">Used - Good</p>
               )}
               {condition === "usedfair" && (
-                <p className="btn bt-outline-success text-success m-1">
-                  Used - Fair
-                </p>
+                <p className="text-white m-1">Used - Fair</p>
               )}
-              {purchasable && (
-                <p className="btn bt-outline-success text-success m-1">
-                  Swap & Buy
-                </p>
-              )}
-              {!purchasable && (
-                <p className="btn bt-outline-success text-success m-1">
-                  Swap Only
-                </p>
-              )}
+              {purchasable && <p className="text-white m-1">Swap & Buy</p>}
+              {!purchasable && <p className="text-white m-1">Swap Only</p>}
             </div>
             <Link
               className="btn btn-success text-primary fw-bold d-block"
