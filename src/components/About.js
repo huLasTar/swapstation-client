@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section id="about" className="bg-primary text-white">
+    <section id="about" className="text-white">
       <div className="container col-xxl-8 px-4 py-5">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div className="col-lg-6 text-start">
@@ -23,11 +23,9 @@ function About() {
           </div>
           <div className="col-10 col-sm-8 col-lg-6">
             <img
-              src="https://gmedia.playstation.com/is/image/SIEPDC/ps-now-may-featured-image-block-02-en-17may21?$native--t$"
+              src="https://res.cloudinary.com/hulastar/image/upload/v1646932364/SwapStation/aboutimg_rwjied.png"
               className="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              width="700"
-              height="500"
+              alt="About SwapStation"
               loading="lazy"
             />
           </div>

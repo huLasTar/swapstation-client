@@ -6,14 +6,12 @@ function ProductCard({
   imageUrl,
   category,
   condition,
-  description,
   purchasable,
-  seller,
   _id,
 }) {
   return (
     <div className="col">
-      <div className="card bg-primary text-white border border-primary shadow-sm">
+      <div className="card bg-primary text-white border border-success shadow-sm">
         <div className="card-body ProductCard p-0">
           <img className="card-img-top" src={imageUrl} alt={title} />
           <Link to={`/products/${_id}`}>
