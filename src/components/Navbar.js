@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/auth.context";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
@@ -12,7 +13,13 @@ function Navbar() {
           <h1 className="navbar-brand m-0">SwapStation</h1>
         </Link>
 
+        {/*}
         <Link to="#about">About</Link>
+        */}
+        <HashLink smooth to="#about">
+          About
+        </HashLink>
+
         <Link to="#faq">FAQ</Link>
         <Link to="#contact">Contact</Link>
 
