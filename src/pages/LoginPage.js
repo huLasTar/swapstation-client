@@ -40,9 +40,11 @@ function LoginPage(props) {
     <section id="LoginPage">
       <div className="container">
         <div className="row">
-          <div className="card card-login border border-success shadow-sm my-5">
+          <div className="card card-login bg-primary text-white border border-success shadow-sm my-5">
             <div className="card-body py-5">
-              <h3 className="fw-normal mb-5">Sign In</h3>
+              <h3 className="fw-normal mb-5">
+                Sign <span className="text-success">In</span>
+              </h3>
 
               <form onSubmit={handleLoginSubmit}>
                 <div className="row">

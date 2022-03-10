@@ -71,12 +71,14 @@ function AddProductPage(props) {
     <section id="AddProduct">
       <div className="container">
         <div className="row">
-          <div className="card card-addproduct border border-success shadow-sm my-5">
+          <div className="card card-addproduct bg-primary text-white border border-success shadow-sm my-5">
             <div className="card-body py-5">
               <form onSubmit={handleSubmit}>
                 <div className="col-12">
                   <div className="p-5">
-                    <h3 className="fw-normal mb-5">Add Product</h3>
+                    <h3 className="fw-normal mb-5">
+                      Add <span className="text-success">Product</span>
+                    </h3>
                     <div className="row mb-3">
                       <div className="col-12">
                         <div className="form-group">
@@ -217,7 +219,7 @@ function AddProductPage(props) {
                       <div className="row">
                         <div className="col-12">
                           <button
-                            className="btn btn-success btn-lg mt-5"
+                            className="btn btn-success btn-lg text-primary fw-bold mt-5"
                             type="submit"
                             disabled={false}
                           >

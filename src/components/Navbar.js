@@ -29,17 +29,17 @@ function Navbar() {
               </HashLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-success" to="#products">
+              <Link className="nav-link text-success" to="/#products">
                 Products
               </Link>
             </li>
             <li className="nav-item">
-              <HashLink smooth className="nav-link text-success" to="#faq">
+              <HashLink smooth className="nav-link text-success" to="/#faq">
                 FAQ
               </HashLink>
             </li>
             <li className="nav-item">
-              <HashLink smooth className="nav-link text-success" to="#contact">
+              <HashLink smooth className="nav-link text-success" to="/#contact">
                 Contact
               </HashLink>
             </li>

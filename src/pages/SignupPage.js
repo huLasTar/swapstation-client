@@ -61,7 +61,7 @@ function SignupPage(props) {
     <section id="SignupPage">
       <div className="container">
         <div className="row">
-          <div className="card card-registration border border-success shadow-sm my-5">
+          <div className="card card-registration bg-primary text-white border border-success shadow-sm my-5">
             <div className="card-body py-5">
               <form className="row" onSubmit={handleSignupSubmit}>
                 <div className="col-6">

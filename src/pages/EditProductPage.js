@@ -93,12 +93,14 @@ function EditProductPage(props) {
   return (
     <div className="container EditProductPage">
       <div className="row">
-        <div className="card card-editproduct border border-warning shadow-sm my-5">
+        <div className="card card-editproduct bg-primary text-white border border-warning shadow-sm my-5">
           <div className="card-body py-5">
             <form onSubmit={handleFormSubmit}>
               <div className="col-12">
                 <div className="p-5">
-                  <h3 className="fw-normal mb-5">Edit Product</h3>
+                  <h3 className="fw-normal mb-5">
+                    Edit <span className="text-success">Product</span>
+                  </h3>
 
                   <div className="row mb-3">
                     <div className="col-12">
