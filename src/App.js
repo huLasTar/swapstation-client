@@ -32,7 +32,14 @@ function App() {
           }
         />
 
-        <Route path="/products/:id" element={<ProductDetailsPage />} />
+        <Route
+          path="/products/:id"
+          element={
+            <IsPrivate>
+              <ProductDetailsPage />
+            </IsPrivate>
+          }
+        />
 
         <Route
           path="/products/edit/:id"
