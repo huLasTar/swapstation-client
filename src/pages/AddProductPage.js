@@ -76,7 +76,7 @@ function AddProductPage(props) {
               <form onSubmit={handleSubmit}>
                 <div className="col-12">
                   <div className="p-5">
-                    <h3 className="fw-normal mb-5">
+                    <h3 className="fw-bold mb-5">
                       Add <span className="text-success">Product</span>
                     </h3>
                     <div className="row mb-3">

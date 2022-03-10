@@ -65,7 +65,7 @@ function SignupPage(props) {
             <div className="card-body py-5">
               <form className="row" onSubmit={handleSignupSubmit}>
                 <div className="col-lg-6 col-md-6 col-sm-12">
-                  <div className="p-5">
+                  <div className="px-5">
                     <h3 className="fw-bold mb-5">
                       General <span className="text-success">Infomation</span>
                     </h3>
@@ -157,7 +157,7 @@ function SignupPage(props) {
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
-                  <div className="p-5">
+                  <div className="px-5">
                     <h3 className="fw-bold mb-5">
                       Contact <span className="text-success">Details</span>
                     </h3>
@@ -233,7 +233,7 @@ function SignupPage(props) {
                 </div>
                 <div className="col-12">
                   <button
-                    className="btn btn-success text-primary btn-lg fw-bold"
+                    className="btn btn-success text-primary btn-lg fw-bold mt-4"
                     type="submit"
                   >
                     Submit

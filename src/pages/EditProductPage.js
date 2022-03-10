@@ -98,7 +98,7 @@ function EditProductPage(props) {
             <form onSubmit={handleFormSubmit}>
               <div className="col-12">
                 <div className="p-5">
-                  <h3 className="fw-normal mb-5">
+                  <h3 className="fw-bold mb-5">
                     Edit <span className="text-success">Product</span>
                   </h3>
 
