@@ -15,12 +15,7 @@ function Contact() {
                 <label className="form-label" htmlFor="name">
                   Name
                 </label>
-                <input
-                  className="form-control"
-                  id="name"
-                  type="text"
-                  placeholder="Name"
-                />
+                <input className="form-control" id="name" type="text" />
               </div>
 
               <div className="mb-3">
@@ -31,7 +26,6 @@ function Contact() {
                   className="form-control"
                   id="emailAddress"
                   type="email"
-                  placeholder="Email Address"
                 />
               </div>
 
@@ -43,7 +37,6 @@ function Contact() {
                   className="form-control"
                   id="message"
                   type="text"
-                  placeholder="Message"
                 ></textarea>
               </div>
 
