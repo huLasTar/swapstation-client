@@ -42,7 +42,7 @@ function LoginPage(props) {
         <div className="row">
           <div className="card card-login bg-primary text-white border border-success shadow-sm my-5">
             <div className="card-body py-5">
-              <h3 className="fw-normal mb-5">
+              <h3 className="fw-bold mb-5">
                 Sign <span className="text-success">In</span>
               </h3>
 
@@ -95,8 +95,13 @@ function LoginPage(props) {
                 </p>
               )}
 
-              <h3 className="fw-normal m-0">Don't have an account yet?</h3>
-              <Link className="btn btn-success btn-lg mt-5" to={"/signup"}>
+              <h3 className="fw-bold m-0">
+                Don't have an <span className="text-success">account yet?</span>
+              </h3>
+              <Link
+                className="btn btn-success text-primary btn-lg mt-5"
+                to={"/signup"}
+              >
                 Sign Up
               </Link>
             </div>

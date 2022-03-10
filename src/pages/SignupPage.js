@@ -66,7 +66,7 @@ function SignupPage(props) {
               <form className="row" onSubmit={handleSignupSubmit}>
                 <div className="col-6">
                   <div className="p-5">
-                    <h3 className="fw-normal mb-5">
+                    <h3 className="fw-bold mb-5">
                       General <span className="text-success">Infomation</span>
                     </h3>
 
@@ -155,7 +155,7 @@ function SignupPage(props) {
                 </div>
                 <div className="col-6">
                   <div className="p-5">
-                    <h3 className="fw-normal mb-5">
+                    <h3 className="fw-bold mb-5">
                       Contact <span className="text-success">Details</span>
                     </h3>
 
@@ -226,7 +226,7 @@ function SignupPage(props) {
                     <div className="row">
                       <div className="col-12">
                         <button
-                          className="btn btn-success btn-lg fw-bold mt-5"
+                          className="btn btn-success text-primary btn-lg fw-bold mt-5"
                           type="submit"
                         >
                           Submit
@@ -234,6 +234,14 @@ function SignupPage(props) {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className="col-12">
+                  <button
+                    className="btn btn-success text-primary btn-lg fw-bold mt-5"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
                 </div>
               </form>
 
@@ -243,11 +251,11 @@ function SignupPage(props) {
                 </p>
               )}
 
-              <h3 className="fw-normal m-0">
+              <h3 className="fw-bold m-0">
                 Already have <span className="text-success">account?</span>
               </h3>
               <Link
-                className="btn btn-success btn-lg fw-bold mt-5"
+                className="btn btn-success text-primary btn-lg fw-bold mt-3"
                 to={"/login"}
               >
                 Login
