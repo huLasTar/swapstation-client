@@ -21,19 +21,19 @@ function Navbar() {
           </h1>
         </Link>
 
-        <HashLink smooth className="navlink" to="#about">
+        <HashLink smooth className="nav-link" to="#about">
           About
         </HashLink>
-        <HashLink smooth className="navlink" to="#faq">
+        <HashLink smooth className="nav-link" to="#faq">
           FAQ
         </HashLink>
-        <HashLink smooth className="navlink" to="#contact">
+        <HashLink smooth className="nav-link" to="#contact">
           Contact
         </HashLink>
 
         {isLoggedIn && (
           <>
-            <Link className="navlink" to="/products">
+            <Link className="nav-link" to="/products">
               Products
             </Link>
             <Link
