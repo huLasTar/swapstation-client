@@ -48,14 +48,6 @@ function ProductDetailsPage(props) {
                 </div>
               </div>
               <div className="col-6 text-start">
-                <div className="text-right d-block">
-                  <Link
-                    to="/products"
-                    className="text-lg text-primary fw-bold my-5"
-                  >
-                    &laquo; Back to products
-                  </Link>
-                </div>
                 <div className="p-5">
                   {product && (
                     <>
@@ -156,6 +148,11 @@ function ProductDetailsPage(props) {
               </div>
             </div>
           </div>
+        </div>
+        <div className="text-center fs-3 d-block">
+          <Link to="/products" className="text-white fw-bold my-5">
+            &laquo; Back to products
+          </Link>
         </div>
       </div>
     </div>
