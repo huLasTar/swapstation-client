@@ -13,7 +13,7 @@ function ProductCard({
 }) {
   return (
     <div className="col">
-      <div className="card bg-primary text-white text-start border border-primary shadow-sm">
+      <div className="card bg-primary text-white border border-primary shadow-sm">
         <div className="card-body ProductCard p-0">
           <img className="card-img-top" src={imageUrl} alt={title} />
           <Link to={`/products/${_id}`}>
@@ -21,7 +21,7 @@ function ProductCard({
               <h5 className="m-0">{title}</h5>
             </div>
           </Link>
-          <div className="card-text text-center p-0">
+          <div className="card-text p-0">
             <div className="badges my-2">
               {category === "PS5" && (
                 <p className="badge bg-success text-primary m-1">
