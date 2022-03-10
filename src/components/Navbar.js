@@ -22,7 +22,7 @@ function Navbar() {
         </Link>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav text-center">
             <li className="nav-item">
               <HashLink smooth className="nav-link text-success" to="#about">
                 About
