@@ -39,7 +39,7 @@ function LoginPage(props) {
   return (
     <div className="container SignupPage">
       <div className="row">
-        <div className="card card-registration my-5">
+        <div className="card card-login border border-success my-5">
           <div className="card-body py-5">
             <h3 className="fw-normal mb-5">Sign In</h3>
 

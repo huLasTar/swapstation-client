@@ -60,7 +60,7 @@ function SignupPage(props) {
   return (
     <div className="container SignupPage">
       <div className="row">
-        <div className="card card-registration my-5">
+        <div className="card card-registration border border-success my-5">
           <div className="card-body py-5">
             <form className="row" onSubmit={handleSignupSubmit}>
               <div className="col-6">

@@ -14,7 +14,7 @@ function ProductCard({
   return (
     <div className="col">
       <div className="card shadow-sm">
-        <div className="card-body ProductCard bg-primary text-white text-start p-0">
+        <div className="card-body ProductCard bg-primary text-white text-start border border-success p-0">
           <img className="card-img-top" src={imageUrl} alt={title} />
           <Link to={`/products/${_id}`}>
             <div className="card-title p-3">

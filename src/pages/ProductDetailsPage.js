@@ -33,7 +33,7 @@ function ProductDetailsPage(props) {
   return (
     <div className="container ProductDetails">
       <div className="row">
-        <div className="card card-product my-5 p-0">
+        <div className="card card-product border border-success my-5 p-0">
           <div className="card-body p-0 m-0">
             <div className="row">
               <div className="col-6">
