@@ -48,7 +48,7 @@ function LoginPage(props) {
 
               <form onSubmit={handleLoginSubmit}>
                 <div className="row">
-                  <div className="col-12">
+                  <div className="col-lg-6 col-md-6 col-sm-12 mx-auto">
                     <div className="form-group">
                       <label htmlFor="username" className="form-label">
                         Username
@@ -78,9 +78,9 @@ function LoginPage(props) {
                 </div>
 
                 <div className="row">
-                  <div className="col-12">
+                  <div className="col-lg-6 col-md-6 col-sm-12 mx-auto">
                     <button
-                      className="btn btn-success btn-lg text-primary fw-bold"
+                      className="btn btn-success btn-lg text-primary fw-bold mt-4"
                       type="submit"
                     >
                       Login
