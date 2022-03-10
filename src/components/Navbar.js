@@ -49,7 +49,10 @@ function Navbar() {
         {isLoggedIn && (
           <>
             <div className="btn-group">
-              <Link to="/products/create" className="btn btn-success fw-normal">
+              <Link
+                to="/products/create"
+                className="btn btn-success text-dark fw-normal"
+              >
                 New Product
               </Link>
               <button
@@ -59,7 +62,7 @@ function Navbar() {
                 Logout
               </button>
             </div>
-            <span className="badge bg-secondary text-dark fw-normal m-5">
+            <span className="badge bg-secondary text-dark fw-normal mx-2">
               Welcome, {user && user.username}
             </span>
           </>
