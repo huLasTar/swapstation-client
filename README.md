@@ -45,36 +45,40 @@ As a super user, I can modify anything on database level.
 - [ReactJS](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/")
+- [Bootstrap]("https://getbootstrap.com/")
 - [HTML](http://www.html5.com/)
 - [CSS](https://www.w3schools.com/w3css/defaulT.asp)
 
-<!--MODELS-->
+<!--COMPONENTS AND PAGES-->
 
-### Models
+### Components and Pages
 
-- User - User account details (username, email, password, first name, last name, address, city, zip code, phone number).
-- Product- Product details (title, category, condition, description, purchasable, price, image).
-- Exchange - Swap details (date of swap, seller, buyer, seller's item, buyer's item, comment, status).
-- Report - Details of the reported product (product ID, reported by, message, status).
+#### Components
 
-<!--SERVER ROUTES-->
+About
+AddProduct
+AddReport
+Contact
+ExchangeCard
+Faq
+Footer
+Hero
+IsAnon
+IsPrivate
+Navbar
+ProductCard
+SwapOffer
 
-### Server routes
+#### Pages
 
-| HTTP verb | URL                                      | Request body | Action                                 |
-| --------- | ---------------------------------------- | ------------ | -------------------------------------- |
-| POST      | `/api/report/:id`                        | JSON         | Posting report                         |
-| --------- | ---------------------------------------- | ------------ | -------------------------------------- |
-| GET       | `/api/products`                          | (empty)      | Get all products                       |
-| POST      | `/api/products`                          | JSON         | Add a new product                      |
-| GET       | `/api/products/:productId`               | (empty)      | Get the selected product               |
-| PUT       | `/api/products/:productId/edit`          | JSON         | Edit product details                   |
-| PATCH     | `/api/products/:productId/exchange`      | (empty)      | Add new trade offer                    |
-| DELETE    | `/api/:toolId/delete`                    | (empty)      | Delete the selected product by ID      |
-| --------- | ---------------------------------------- | ------------ | -------------------------------------- |
-| GET       | `/api/signup`                            | (empty)      | Get signup form                        |
-| POST      | `/api/signup`                            | JSON         | Post signup form (registration)        |
-| GET       | `/api/login`                             | (empty)      | Get login form                         |
+AddProductPage
+EditProductPage
+ExchangeListPage
+HomePage
+LoginPage
+ProductDetailsPage
+ProductListPage
+SignupPage
 
 <!--Project Link-->
 
@@ -100,6 +104,8 @@ As a super user, I can modify anything on database level.
 - <a href="https://www.ironhack.com/">Ironhack Student Portal</a>
 - <a href="https://www.npmjs.com/">npm</a>
 - <a href="https://stackoverflow.com/">Stack Overflow</a>
+- <a href="https://getbootstrap.com/">Bootstrap Official Page</a>
+- <a href="https://www.playstation.com/">PlayStation Official Website</a>
 
 <!--TEAM MEMBERS-->
 
