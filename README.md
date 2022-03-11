@@ -16,7 +16,7 @@ Besides that, they also can buy and sell products on the portal, but the main go
 
 <!-- WIREFRAMES -->
 
-### Wirefrmaes
+### Wireframes
 
 <img src="https://github.com/huLasTar/swapstation-client/blob/master/wireframe.jpg?raw=true">
 
