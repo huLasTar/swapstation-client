@@ -20,40 +20,24 @@ function ProductCard({
             </div>
           </Link>
           <div className="card-text p-0">
-            <div className="badges my-2">
-              {category === "PS5" && (
-                <p className="text-white m-1">PlayStation 5</p>
-              )}
-              {category === "PS4" && (
-                <p className="text-white m-1">PlayStation 4</p>
-              )}
-              {category === "PS3" && (
-                <p className="text-whit m-1">PlayStation 3</p>
-              )}
-              {category === "PS2" && (
-                <p className="text-white m-1">PlayStation 2</p>
-              )}
-              {category === "PS1" && (
-                <p className="text-white m-1">PlayStation 1</p>
-              )}
-              {category === "PSVita" && (
-                <p className="text-white m-1">PlayStation Vita</p>
-              )}
+            <div className="badges text-white my-2">
+              {category === "PS5" && <p className="m-1">PlayStation 5</p>}
+              {category === "PS4" && <p className="m-1">PlayStation 4</p>}
+              {category === "PS3" && <p className="m-1">PlayStation 3</p>}
+              {category === "PS2" && <p className="m-1">PlayStation 2</p>}
+              {category === "PS1" && <p className="m-1">PlayStation 1</p>}
+              {category === "PSVita" && <p className="m-1">PlayStation Vita</p>}
               {category === "PSP" && (
-                <p className="text-white m-1">PlayStation Portable</p>
+                <p className="m-1">PlayStation Portable</p>
               )}
-              {condition === "new" && <p className="text-white m-1">New</p>}
+              {condition === "new" && <p className="m-1">New</p>}
               {condition === "usednew" && (
-                <p className="text-white m-1">Used - Like New</p>
+                <p className="m-1">Used - Like New</p>
               )}
-              {condition === "usedgood" && (
-                <p className="text-white m-1">Used - Good</p>
-              )}
-              {condition === "usedfair" && (
-                <p className="text-white m-1">Used - Fair</p>
-              )}
-              {purchasable && <p className="text-white m-1">Swap & Buy</p>}
-              {!purchasable && <p className="text-white m-1">Swap Only</p>}
+              {condition === "usedgood" && <p className="m-1">Used - Good</p>}
+              {condition === "usedfair" && <p className="m-1">Used - Fair</p>}
+              {purchasable && <p className="m-1">Swap & Buy</p>}
+              {!purchasable && <p className="m-1">Swap Only</p>}
             </div>
             <Link
               className="btn btn-success text-primary fw-bold d-block"
