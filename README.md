@@ -1,5 +1,7 @@
 # SwapStation - Client Side
 
+<hr>
+
 <!-- ABOUT THE PROJECT -->
 
 ### About
@@ -10,11 +12,15 @@ Gamers (members) can create accounts and upload their original discs, browse oth
 
 Besides that, they also can buy and sell products on the portal, but the main goal is the swap (pay for the shipping only).
 
+<hr>
+
 <!-- WIREFRAMES -->
 
 ### Wirefrmaes
 
 <img src="https://github.com/huLasTar/swapstation-client/blob/master/wireframe.jpg?raw=true">
+
+<hr>
 
 <!--TECHNOLOGIES USED-->
 
@@ -22,10 +28,13 @@ Besides that, they also can buy and sell products on the portal, but the main go
 
 - [ReactJS](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
+- [JavaScript](https://www.javascript.com/)
 - [npm](https://www.npmjs.com/")
 - [Bootstrap](https://getbootstrap.com/)
 - [HTML](http://www.html5.com/)
 - [CSS](https://www.w3schools.com/w3css/defaulT.asp)
+
+<hr>
 
 <!--COMPONENTS AND PAGES-->
 
@@ -58,11 +67,15 @@ Besides that, they also can buy and sell products on the portal, but the main go
 - ProductListPage
 - SignupPage
 
+<hr>
+
 <!--Project Link-->
 
 ### Link to project
 
 <a href="https://swapstation.netlify.app/">SwapStation</a>
+
+<hr>
 
 <!--Future Work-->
 
@@ -75,21 +88,28 @@ Besides that, they also can buy and sell products on the portal, but the main go
 - Email notification system
 - Watchlist / Wishlist
 
+<hr>
+
 <!--RESOURCES-->
 
 ### Resources
 
 - <a href="https://www.ironhack.com/">Ironhack Student Portal</a>
+- <a href="https://reactjs.org/">ReactJS Documentation</a>
 - <a href="https://www.npmjs.com/">npm</a>
 - <a href="https://stackoverflow.com/">Stack Overflow</a>
 - <a href="https://getbootstrap.com/">Bootstrap Official Page</a>
 - <a href="https://www.playstation.com/">PlayStation Official Website</a>
+
+<hr>
 
 <!--TEAM MEMBERS-->
 
 ### Team members
 
 - László Tarnai
+
+<hr>
 
 <!-- ACKNOWLEDGMENTS -->
 
