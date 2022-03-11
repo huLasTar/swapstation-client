@@ -40,7 +40,7 @@ function ProductCard({
               {!purchasable && <p className="m-1">Swap Only</p>}
             </div>
             <Link
-              className="btn btn-success text-primary fw-bold d-block"
+              className="btn btn-success btn-lg text-primary fw-bold d-block"
               to={`/products/${_id}`}
             >
               Details

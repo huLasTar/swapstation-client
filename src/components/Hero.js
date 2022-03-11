@@ -30,13 +30,13 @@ function Hero() {
                 <>
                   <Link
                     to="/signup"
-                    className="btn btn-success btn-lg px-4 me-md-2"
+                    className="btn btn-success btn-lg fw-bold px-4 me-md-2"
                   >
                     Sign Up
                   </Link>
                   <Link
                     to="/login"
-                    className="btn btn-outline-success btn-lg px-4"
+                    className="btn btn-outline-success btn-lg fw-bold px-4"
                   >
                     Login
                   </Link>

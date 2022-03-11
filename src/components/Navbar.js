@@ -49,16 +49,10 @@ function Navbar() {
         {isLoggedIn && (
           <>
             <div className="btn-group">
-              <Link
-                to="/products/create"
-                className="btn btn-success text-dark fw-normal"
-              >
+              <Link to="/products/create" className="btn btn-success text-dark">
                 New Product
               </Link>
-              <button
-                className="btn btn-outline-success fw-normal"
-                onClick={logOutUser}
-              >
+              <button className="btn btn-outline-success" onClick={logOutUser}>
                 Logout
               </button>
             </div>
@@ -71,10 +65,10 @@ function Navbar() {
         {!isLoggedIn && (
           <>
             <div className="btn-group">
-              <Link to="/signup" className="btn btn-outline-success fw-normal">
+              <Link to="/signup" className="btn btn-outline-success">
                 Sign Up
               </Link>
-              <Link to="/login" className="btn btn-outline-success fw-normal">
+              <Link to="/login" className="btn btn-outline-success">
                 Login
               </Link>
             </div>
