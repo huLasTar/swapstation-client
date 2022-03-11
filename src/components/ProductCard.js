@@ -28,7 +28,7 @@ function ProductCard({
                 <p className="text-white m-1">PlayStation 4</p>
               )}
               {category === "PS3" && (
-                <p className="text-white">PlayStation 3</p>
+                <p className="text-whit m-1">PlayStation 3</p>
               )}
               {category === "PS2" && (
                 <p className="text-white m-1">PlayStation 2</p>
